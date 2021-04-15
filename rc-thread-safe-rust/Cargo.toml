@@ -1,0 +1,11 @@
+[package]
+name = "rc-thread-safe-rust"
+version = "0.1.0"
+authors = ["Jollyer <jollyer@outlook.kr>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-std = "1.9.0"
+futures = { version = "0.3.12" }

@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'rc-thread-safe-rust'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rc-thread-safe-rust",
+                    "--package=rc-thread-safe-rust"
+                ],
+                "filter": {
+                    "name": "rc-thread-safe-rust",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "RUST_BACKTRACE": "1"
+            }
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'rc-thread-safe-rust'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=rc-thread-safe-rust",
+                    "--package=rc-thread-safe-rust"
+                ],
+                "filter": {
+                    "name": "rc-thread-safe-rust",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
